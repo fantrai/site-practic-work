@@ -4,111 +4,123 @@
 <head>
     <meta charset="UTF-8" />
     <title>I Am Nipe Midori</title>
-    <link rel="shortcut icon" href="/Resources/images/fovicon.jpg">
+    <link rel="shortcut icon" href="Resources/images/fovicon.jpg">
     </link>
+    <link rel="stylesheet" href="Resources/css/style.css">
+    </link>
+    <script src="formpop.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header-flex">
+        <img src="Resources/images/fovicon.jpg" alt="logo" width="50" />
         <h1>Midori site inc.<h1></h1>
+        <a href="#who">Кто я?</a>
+        <a href="#whatDoIDo">Чем я занимаюсь?</a>
+        <a href="#MyBenefit">Моя польза этому миру и самому себе</a>
+        <a href="#fact">Внезапный факт</a>
+        <a href="#theEnd">Эндинг</a>
+        <img src="Resources/images/user-square.svg" id="profile-user" class="trigger" />
     </header>
 
     <nav>
         <ul>
-            <li><a href="#who">Кто я?</a><br></li>
-            <li><a href="#whatDoIDo">Чем я занимаюсь?</a><br></li>
-            <li><a href="#MyBenefit">Моя польза этому миру и самому себе</a><br></li>
-            <li><a href="#fact">Внезапный факт</a><br></li>
-            <li><a href="#theEnd">Эндинг</a><br></li>
+            <li><a href="../index.html">Главная страница</a><br></li>
+            <li><a href="../fantrai/main.html">fantrai</a><br></li>
+            <li><a href="portfolio.html">Портфолио</a><br></li>
+
         </ul>
     </nav>
 
     <main>
-        <div id="who">
-            <hr>
+        <div id="who" class="anchor">
             <h2>Кто я?</h2>
-            <table>
-                <tr>
-                    <td>
-                        <p><img src="/Resources/images/NipePhoto.jpg" alt="picture of nipe" width="200" /></p>
-                    </td>
-                    <td>
-                        <q>Мы мыслим - следовательно мы существуем, или же мы существуем пока кто-то мыслит о нас?</q>
-                        <p>Я - человек, которого с самого детства интересовали странные, сложные, непонятные, но
-                            интересные штуки.<br>
-                            Если мой мозг находит что-то интересное в новой информации или занятии, то все последующие
-                            действия по их <br>
-                            познанию даются с необыкновенной легкостью и увлеченностью. С самого начала мною движило
-                            желание быть<br>
-                            "другим", не таким как остальные - более умным, интересным, молчаливым, загадочным,
-                            полезным, сильным, <b><i>другим</i></b>.<br>
-                            Так я пришел к учебе на профессию, которую все считают <i>магией</i>, открещиваются, не
-                            хотят даже пытаться понять<br>
-                            Это моя стихия, мне здесь хорошо. <b>Я - бэкендер</b>. Даже среди айтишников я считаюсь
-                            невероятным. Из-за работы <br>
-                            с самыми неприятными вещами вроде командной строки, которую мало кто хочет осваивать или
-                            специфичных языков.</p>
-                    </td>
-                </tr>
-            </table>
+            <span class="who-p-flex">
+                <img src="Resources/images/NipePhoto.jpg" alt="picture of nipe" width="200" />
+                <span class="text-flex">
+                    <q>Мы мыслим - следовательно мы существуем, или же мы существуем пока кто-то мыслит о нас?</q>
+                    <p id="who-paragraph">Я - человек, которого с самого детства интересовали странные, сложные,
+                        непонятные, но интересные штуки.
+                        Если мой мозг находит что-то интересное в новой информации или занятии, то все последующие
+                        действия по их
+                        познанию даются с необыкновенной легкостью и увлеченностью. С самого начала мною движило желание
+                        быть
+                        "другим", не таким как остальные - более умным, интересным, молчаливым, загадочным, полезным,
+                        сильным, <b><i>другим</i></b>.
+                        Так я пришел к учебе на профессию, которую все считают <i>магией</i>, открещиваются, не хотят
+                        даже пытаться понять
+                        Это моя стихия, мне здесь хорошо. <b>Я - бэкендер</b>. Даже среди айтишников я считаюсь
+                        невероятным. Из-за работы
+                        с самыми неприятными вещами вроде командной строки, которую мало кто хочет осваивать или
+                        специфичных языков.</p>
+                </span>
+            </span>
+
         </div>
 
-        <div id="whatDoIDo">
-            <hr>
-            <h2>Мои занятия</h2>
-            <table>
-                <tr>
-                    <td>
-                        <table>
-                            <tr>
-                                <td><img src="Resources/images/fovicon.jpg" alt="anime" width="100" /></td>
-                                <td><img src="/Resources/images/Dota.png" alt="games" width="100" /></td>
-                            </tr>
-                            <tr>
-                                <td><img src="/Resources/images/php.png" alt="programming" width="100" /></td>
-                                <td><img src="/Resources/images/ping-pong.png" alt="sport" width="100" /></td>
-                            </tr>
-                        </table>
-               
-                    </td>
-                    <td>
+        <div id="whatDoIDo" class="anchor">
+            <div class="colorDiv">
+                <h2>Мои занятия</h2>
+                <span class="whatDoIDo-flex">
+                    <table>
+                        <tr>
+                            <td><img src="Resources/images/fovicon.jpg" alt="anime" width="100" /></td>
+                            <td><img src="Resources/images/Dota.png" alt="games" width="100" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="Resources/images/php.png" alt="programming" width="100" /></td>
+                            <td><img src="Resources/images/ping-pong.png" alt="sport" width="100" /></td>
+                        </tr>
+                    </table>
+                    <span class="text-flex">
                         <p>Я люблю заниматься типичными подростковыми занятиями</p>
                         <ul>
                             <li>Аниме (иногда встречаются невероятные тайтлы)</li>
                             <li>Игры (исходя из списка последних сыгранных в основном Dota 2)</li>
                             <li>Программирование (тут и говорить нечего)</li>
-                            <li>Спорт (пинг-понгаюсь с <a href="/fantrai/main.html">fantrai</a>)</li>
+                            <li>Спорт (пинг-понгаюсь с <a href="../fantrai/main.html">fantrai</a>)</li>
                             <li>Музыка (ни дня без нее)</li>
                             <li>Нейронные сети (классная игрушка)</li>
                         </ul>
                         <p>Составляют типичный наполнитель моего дня</p>
-                    </td>
-                </tr>
-            </table>
+                    </span>
+                </span>
+            </div>
         </div>
 
-        <div id="MyBenefit">
-            <hr>
+        <div id="MyBenefit" class="anchor">
             <h2>Полезность моего существования</h2>
-            <p><i>С начала и до конца моя жизнь важна приносимой пользой. Начиная невероятно важной будущей работой, продолжая значимостью как член общества, заканчивая полезностью для самого себя.</i></p>
+            <span class="myBenefit-flex">
+                <img src="Resources/images/graphic.png" alt="graphic" width="300" />
+                <p class="text-flex" id="benefit-p"><i>С начала и до конца моя жизнь важна приносимой пользой. Начиная невероятно важной будущей работой,
+                    продолжая значимостью как член общества, заканчивая полезностью для самого себя.</i></p>
+                <img src="Resources/images/graphic.png" alt="graphic" width="300" />
+            </span>
         </div>
 
-        <div id="fact">
-            <hr>
-            <h2>Внезапный факт</h2>
-            <p><b>Я невероятно люблю персонажей с каре</b></p>
-            <img src="/Resources/images/каре1.jpg" height="150"/>
-            <img src="/Resources/images/каре2.jpg" height="150"/>
-            <img src="/Resources/images/каре3.jpeg" height="150"/>
-            <img src="/Resources/images/каре4.jpg" height="150"/> <br>
-            <img src="/Resources/images/каре5.jpg" width="485"/>
+        <div id="fact" class="anchor">
+            <div class="colorDiv">
+                <h2>Внезапный факт</h2>
+                <p><b>Я невероятно люблю персонажей с каре</b></p>
+                <img src="Resources/images/каре1.jpg" height="150" />
+                <img src="Resources/images/каре2.jpg" height="150" />
+                <img src="Resources/images/каре3.jpeg" height="150" />
+                <img src="Resources/images/каре4.jpg" height="150" /> <br>
+                <img src="Resources/images/каре5.jpg" width="485" />
+            </div>
         </div>
 
-        <div id="theEnd">
-            <hr>
+        <div id="theEnd" class="anchor">
             <h2>Ты добрался до конца, путник. Отдохни.</h2>
-            <img src="/Resources/images/END.gif"/>
+            <img src="Resources/images/END.gif"/>
         </div>
+
+        <button>Open Modal</button>
+<div id="layer">
+  <div id="modal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde deleniti, non illo nostrum neque, accusantium praesentium error aperiam quo facere corrupti officia quia obcaecati debitis harum a! Necessitatibus, sequi, labore.</div>
+</div>
+
+       
     </main>
 
 </body>
