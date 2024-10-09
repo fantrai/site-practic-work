@@ -63,35 +63,39 @@ a:visited {
     height: 100%;
 }
 
-#typical_me {
+#content {
     padding: 3em;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 @media (any-hover:hover) {
-    .about_me * li:hover {
+    .contents_list * li:hover {
         transition: font-size 0.4s;
         font-size: 120%;
     }
 
-    .about_me * li:not(:hover) {
+    .contents_list * li:not(:hover) {
         transition: font-size 0.4s;
     }
 }
 
-.about_me {
+.contents_list {
     color: white;
-    margin: auto;
     margin-left: 3em;
     font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.facts {
+.about_me,
+.facts,
+.coming_soon {
     background-color: white;
 }
 
-.facts_grid {
+.about_me_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-content: center;
@@ -100,12 +104,12 @@ a:visited {
     row-gap: 2em;
 }
 
-.facts_grid * h3 {
+.about_me_grid * h3 {
     font-size: 2em;
     color: orangered;
 }
 
-.facts_grid > div {
+.about_me_grid > div {
     font-size: 2em;
     text-align: center;
 }
@@ -114,19 +118,84 @@ a:visited {
     color: white;
 }
 
-.hobby_block {
-    padding: 2em;
+.hobby_block,
+.coming_soon_list {
+    padding: 3em;
+    padding-top: 0;
     display: flex;
-
+    justify-content: center;
 }
 
-.hobby_block > img {
+.hobby_block > img,
+.coming_soon_list > img {
     width: 30%;
 }
 
-.hobby_block > ul {
+.hobby_block > ul,
+.coming_soon_list > ul {
     padding: 3em;
     align-self: center;
     font-size: 1.5em;
     color: white;
+}
+
+.facts_list {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    padding-top: 0;
+}
+
+.facts_list > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.facts_list > div > ul {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.facts_list > div > img {
+    width: 30%;
+    padding-left: 3em;
+}
+
+.useful_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3em;
+    padding-top: 0;
+    gap: 1em 2em;
+}
+
+.useful_grid > div {
+    background-color: white;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.coming_soon_list > ul {
+    color: black;
+}
+
+.up_butt {
+    position: fixed;
+    font-size: 2em;
+    background-color: rgb(247, 98, 44);
+    color: white;
+    padding: 0.3em;
+    padding-right: 1em;
+    padding-left: 1em;
+
+    border: solid;
+    border-color: black;
+    border-radius: 50px;
+    border-width: 1px;
+    
+    right: 1em;
+    bottom: 1em;
 }

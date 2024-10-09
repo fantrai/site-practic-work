@@ -6,30 +6,34 @@
         <meta charset="UTF-8"/>
     </head>
 
-    <body>
+    <body id="up">
+        <div class="up_butt">
+            <a href="#up">наверх</a>
+        </div>
+
         <section class="main_block">
             <h1>--fantrai--</h1>
             <h6>Владимир Носков</h6>
-            <a href="#typical_me" class="false_butt">узнать обо мне больше</a>
+            <a href="#content" class="false_butt">узнать обо мне больше</a>
         </section>
 
-        <section id="typical_me">
+        <section id="content">
             <img class="circle_av" src="resources/fantrai2.jpg"/>
-            <div class="about_me">
+            <div class="contents_list">
                 <h3>Оглавление</h3> <br />
                 <ul>
-                    <li>Обо мне</li>
-                    <li>Хобби и увлечения</li>
-                    <li>*звуки полезности*</li>
-                    <li><del>не</del> интересные факты</li>
-                    <li>coming soon...</li>
+                    <li><a href="#about-me">обо мне</a></li>
+                    <li><a href="#hobby">хобби и увлечения</a></li>
+                    <li><a href="#facts"><del>не</del> интересные факты</a></li>
+                    <li><a href="#useful"><i>*звуки полезности*</i></a></li>
+                    <li><a href="#coming-soon">coming soon...</a></li>
                 </ul>
             </div>
         </section>
 
-        <section class="facts">
-            <h2>Обо мне</h2>
-            <div class="facts_grid">
+        <section class="about_me" id="about-me">
+            <h2>обо мне</h2>
+            <div class="about_me_grid">
                 <div>
                     <h3>1</h3>
                     програмист
@@ -69,8 +73,8 @@
             </div>
         </section>
 
-        <section>
-            <h2 class="w_color">Хобби и увлечения</h2>
+        <section id="hobby">
+            <h2 class="w_color">хобби и увлечения</h2>
             <div class="hobby_block">
                 <img alt="тут должна быть катринка" src="resources/hobby.jpg" />
                 <ul>
@@ -84,6 +88,85 @@
                     <li>смотрю на компьютерные игры</li>
                 </ul>
             </div>
+        </section>
+
+        <section class="facts" id="facts">
+            <h2><del>не</del> интересные факты</h2>
+            <div class="facts_list">
+                <div>
+                    <ul>
+                        <li>любитель фруктовых чаев</li>
+                        <li>поклонник апельсинов</li>
+                        <li>залипаю на светящиеся вещи</li>
+                        <li>сложно напугать, т.к. не успеваю реагировать</li>
+                        <li>сохраняю картинки</li>
+                        <li>меломан</li>
+                        <li>умею игнорировать сущщее</li>
+                        <li>иногда повторяюсь</li>
+                        <li>не люблю шум</li>
+                        <li>люблю наклейки, но некуда их клеить</li>
+                        <li>не придумал больше фактов</li>
+                    </ul>
+                    <img src="resources/facts.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section id="useful">
+            <h2 class="w_color">*звуки полезности*</h2>
+            <div class="useful_grid">
+                <div>
+                    умею собирать компуктеры
+                </div>
+                <div>
+                    умею раскладывать карточки в настолках                
+                </div>
+                <div>
+                    умею читать (иногда)
+                </div>
+                <div>
+                    умею програмировать буквами
+                </div>
+                <div>
+                    сидячий архив интернет мемов из 2017
+                </div>
+                <div>
+                    спасу вас от лишних вкусняшек
+                </div>
+                <div>
+                    умею игнорировать сущщее
+                </div>
+                <div>
+                    умею настраивать беспроводную печать на принтере samsung 2070series
+                </div>
+                <div>
+                    умею устанавливать windows/linux
+                </div>
+                <div>
+                    ступай своей дорогой путник
+                </div>
+            </div>
+        </section>
+
+        <section class="coming_soon" id="coming-soon">
+            <h2>coming soon...</h2>
+            <div class="coming_soon_list">
+                <img alt="тут должна быть катринка" src="resources/future.jpg" />
+                <ul>
+                    <li>сдать это сайт</li>
+                    <li>сделать другой сайт</li>
+                    <li>коммерческая разработка</li>
+                    <li>доучиться</li>
+                    <li>сделать какую нибудь игру</li>
+                    <li>научиться прошивать android</li>
+                    <li>пересмотреть время приключений</li>
+                    <li>придумать планы на будущее</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="w_color">поздравляю - вы добрались до формы!</h2>
         </section>
     </body>
 </html>
