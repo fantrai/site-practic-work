@@ -199,3 +199,14 @@ a:visited {
     right: 1em;
     bottom: 1em;
 }
+
+form {
+    margin: 3em;
+    margin-top: 0;
+    color: white;
+    font-size: 1.5em;
+}
+
+form * {
+    margin: 1em;
+}
