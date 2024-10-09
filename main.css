@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;;
+    padding: 0;
 }
 
 * [class*='flex']{
@@ -15,15 +15,13 @@
 .nipe {
     background-color: darkgreen;
     width: 50%;
+    transition: width 0.4s;
 }
 
 .fantrai {
-    background-color: coral;
+    background-color: orangered;
     width: 50%;
-}
-
-.fantrai:hover, .nipe:hover {
-    width: 100%;
+    transition: width 0.4s;
 }
 
 .flex-v {
@@ -47,4 +45,11 @@ a:link {
 
 img{
     width: 70%;
+}
+
+@media (any-hover:hover) {
+    .fantrai:hover, .nipe:hover {
+        width: 100%;
+        transition: width 0.4s;
+    }
 }
