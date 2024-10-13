@@ -8,7 +8,8 @@
     </link>
     <link rel="stylesheet" href="Resources/css/style.css">
     </link>
-    <script src="formpop.js"></script>
+    <script src="JavaScript/formpop.js" defer></script>
+    <script src="JavaScript/formsend.js" defer></script>
 </head>
 
 <body>
@@ -20,14 +21,14 @@
         <a href="#MyBenefit">Моя польза этому миру и самому себе</a>
         <a href="#fact">Внезапный факт</a>
         <a href="#theEnd">Эндинг</a>
-        <img src="Resources/images/user-square.svg" id="profile-user" class="trigger" />
+        <img src="Resources/images/user-square.svg" id="profile-user" class="openModalBtn" class="trigger" />
     </header>
 
     <nav>
         <ul>
             <li><a href="../index.html">Главная страница</a><br></li>
             <li><a href="../fantrai/main.html">fantrai</a><br></li>
-            <li><a href="portfolio.html">Портфолио</a><br></li>
+            <li><a href="pages/portfolio.html">Портфолио</a><br></li>
 
         </ul>
     </nav>
@@ -115,11 +116,42 @@
             <img src="Resources/images/END.gif"/>
         </div>
 
-        <button>Open Modal</button>
-<div id="layer">
-  <div id="modal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde deleniti, non illo nostrum neque, accusantium praesentium error aperiam quo facere corrupti officia quia obcaecati debitis harum a! Necessitatibus, sequi, labore.</div>
-</div>
-
+        <!-- Само модальное окно -->
+        <div id="myModal" class="modal">
+    
+            <!-- Содержимое модального окна -->
+            <div class="modal-content">
+                <span id="close">&times;</span>
+                <h2>Регистрация</h2>
+                <form>
+                    <p>
+                        <label>Ваш логин:</label>
+                        <input type="text" placeholder="Логин" id="userLogin">
+                    </p>
+                    <p>
+                        <label>Ваш пароль:</label>
+                        <input type="password" placeholder="Пароль" id="userPassword">
+                    </p>
+                    <p>
+                        <label>Ваша почта:</label>
+                        <input type="email" placeholder="E-mail" id="userMail">
+                    </p>
+                    <span>
+                        <label>пол:</label>
+                        <label>муж  </label><input type="radio" name="sex">
+                        <label>жен  </label><input type="radio" name="sex">
+                    </span>
+                    <p>
+                        <input type="button"  value="Регистрация" class="but" id="formBut">
+                    </p>
+                    <p>
+                        <a href="pages/forgotPassword.html">Forgot your password?</a>
+                        <a href="">Войти</a>
+                    </p>
+                </form>
+            </div>
+    
+        </div>
        
     </main>
 
