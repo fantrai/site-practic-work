@@ -2,165 +2,183 @@
     <head>
         <title>fantrai</title>
         <link rel="shortcut icon" href="resources/fantrai2.jpg"/>
+        <link rel="stylesheet" href="fantrai.css" />
         <meta charset="UTF-8"/>
+        <script src="script.js" defer></script>
     </head>
 
-    <body>
-        <h1>------fantrai------</h1>
-        <img alt="аватарка не подгрузилась(" src="resources/fantrai.jpg" width="300" />
-        <hr />
-
-        <div>
-            <h2>оглавление:</h2>
-
-            <table>
-                <tr>
-                    <td>
-                        <img alt="тут должна быть катринка" src="resources/what.jpg" width="300"/>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li><a href="#about-me">обо мне</a></li>
-                            <li><a href="#hobby">хобби и увлечения</a></li>
-                            <li><a href="#useful"><i>*звуки полезности*</i></a></li>
-                            <li><a href="#facts"><del>не</del> интересные факты</a></li>
-                            <li><a href="#coming-soon">coming soon...</a></li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-            <hr />
+    <body id="up">
+        <div class="up_butt">
+            <a href="#up">наверх</a>
         </div>
 
-        <div id="about-me">
-            <h2>обо мне:</h2>
-                <table>
-                    <tr>
-                        <td>
-                            <img alt="тут должна быть лиса" src="resources/about-me.jpg" width="300" />
-                        </td>
+        <section class="main_block">
+            <h1>--fantrai--</h1>
+            <h6>Владимир Носков</h6>
+            <a href="#content" class="false_butt">узнать обо мне больше</a>
+        </section>
 
-                        <td>
-                            <q>я програмист, я делаю клац клац клац</q>
-                            <p>програмист, настольщик, студент, анимешник, <br>
-                                коллекционер технического барахла, <br>
-                                начинающий компьютерщик, случайный сетевик,<br>
-                                высококвалифицированный бездельник</p>
-                        </td>
-                    </tr>
-                </table>
-            <hr/>
-        </div>
+        <section id="content">
+            <img class="circle_av" src="resources/fantrai2.jpg"/>
+            <div class="contents_list">
+                <h3>Оглавление</h3> <br />
+                <ul>
+                    <li><a href="#about-me">обо мне</a></li>
+                    <li><a href="#hobby">хобби и увлечения</a></li>
+                    <li><a href="#facts"><del>не</del> интересные факты</a></li>
+                    <li><a href="#useful"><i>*звуки полезности*</i></a></li>
+                    <li><a href="#coming-soon">coming soon...</a></li>
+                </ul>
+            </div>
+        </section>
 
-        <div id="hobby">
-            <h2>хобби и увлечения:</h2>
+        <section class="about_me" id="about-me">
+            <h2>обо мне</h2>
+            <div class="about_me_grid">
+                <div>
+                    <h3>1</h3>
+                    програмист
+                </div>
+                <div>
+                    <h3>2</h3>
+                    настольщик
+                </div>
+                <div>
+                    <h3>3</h3>
+                    студент
+                </div>
+                <div>
+                    <h3>4</h3>
+                    анимешник
+                </div>
+                <div>
+                    <h3>5</h3>
+                    коллекционер технического барахла
+                </div>
+                <div>
+                    <h3>6</h3>
+                    начинающий компьютерщик
+                </div>
+                <div>
+                    <h3>7</h3>
+                    случайный сетевик
+                </div>
+                <div>
+                    <h3>8</h3>
+                    высококвалифицированный бездельник
+                </div>
+                <div>
+                    <h3>9</h3>
+                    теперь умею делать такие таблички в css
+                </div>
+            </div>
+        </section>
 
-            <table>
-                <tr>
-                    <td>
-                        <img alt="тут должна быть катринка" src="resources/hobby.jpg" width="300"/>
-                    </td>
+        <section id="hobby">
+            <h2 class="w_color">хобби и увлечения</h2>
+            <div class="hobby_block">
+                <img alt="тут должна быть катринка" src="resources/hobby.jpg" />
+                <ul>
+                    <li>делать клац клац на клавиатуре</li>
+                    <li>возиться в технике весело</li>
+                    <li>увлекательно сижу на стуле</li>
+                    <li>делаю новичковый трунь на укулеле</li>
+                    <li>пинг-понгюсь с <a href="../NipeSite/main.html">Nipe</a></li>
+                    <li>раскладываю карточки в настольных играх</li>
+                    <li>сплю</li>
+                    <li>смотрю на компьютерные игры</li>
+                </ul>
+            </div>
+        </section>
 
-                    <td>
-                        <ul>
-                            <li>делать клац клац на клавиатуре</li>
-                            <li>возиться в технике весело</li>
-                            <li>увлекательно сижу на стуле</li>
-                            <li>делаю новичковый трунь на укулеле</li>
-                            <li>пинг-понгюсь с <a href="../NipeSite/main.html">Nipe</a></li>
-                            <li>раскладываю карточки в настольных играх</li>
-                            <li>сплю</li>
-                            <li>смотрю на компьютерные игры</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-            <hr />
-        </div>
+        <section class="facts" id="facts">
+            <h2><del>не</del> интересные факты</h2>
+            <div class="facts_list">
+                <div>
+                    <ul>
+                        <li>любитель фруктовых чаев</li>
+                        <li>поклонник апельсинов</li>
+                        <li>залипаю на светящиеся вещи</li>
+                        <li>сложно напугать, т.к. не успеваю реагировать</li>
+                        <li>сохраняю картинки</li>
+                        <li>меломан</li>
+                        <li>умею игнорировать сущщее</li>
+                        <li>иногда повторяюсь</li>
+                        <li>не люблю шум</li>
+                        <li>люблю наклейки, но некуда их клеить</li>
+                        <li>не придумал больше фактов</li>
+                    </ul>
+                    <img src="resources/facts.jpg">
+                </div>
+            </div>
+        </section>
 
-        <div id="useful">
-            <h2>*звуки полезности*:</h2>
+        <section id="useful">
+            <h2 class="w_color">*звуки полезности*</h2>
+            <div class="useful_grid">
+                <div>
+                    умею собирать компуктеры
+                </div>
+                <div>
+                    умею раскладывать карточки в настолках                
+                </div>
+                <div>
+                    умею читать (иногда)
+                </div>
+                <div>
+                    умею програмировать буквами
+                </div>
+                <div>
+                    сидячий архив интернет мемов из 2017
+                </div>
+                <div>
+                    спасу вас от лишних вкусняшек
+                </div>
+                <div>
+                    умею игнорировать сущщее
+                </div>
+                <div>
+                    умею настраивать беспроводную печать на принтере samsung 2070series
+                </div>
+                <div>
+                    умею устанавливать windows/linux
+                </div>
+                <div>
+                    ступай своей дорогой путник
+                </div>
+            </div>
+        </section>
 
-            <table>
-                <tr>
-                    <td>
-                        <img alt="тут должна быть катринка" src="resources/useful.jpg" width="300"/>
-                    </td>
+        <section class="coming_soon" id="coming-soon">
+            <h2>coming soon...</h2>
+            <div class="coming_soon_list">
+                <img alt="тут должна быть катринка" src="resources/future.jpg" />
+                <ul>
+                    <li>сдать это сайт</li>
+                    <li>сделать другой сайт</li>
+                    <li>коммерческая разработка</li>
+                    <li>доучиться</li>
+                    <li>сделать какую нибудь игру</li>
+                    <li>научиться прошивать android</li>
+                    <li>пересмотреть время приключений</li>
+                    <li>придумать планы на будущее</li>
+                </ul>
+            </div>
+        </section>
 
-                    <td>
-                        <ul>
-                            <li>умею собирать компуктеры</li>
-                            <li>умею раскладывать карточки в настолках</li>
-                            <li>умею читать (иногда)</li>
-                            <li>умею програмировать буквами</li>
-                            <li>сидячий архив интернет мемов из 2017</li>
-                            <li>спасу вас от лишних вкусняшек</li>
-                            <li>умею игнорировать сущщее</li>
-                            <li>умею настраивать беспроводную печать
-                                <br/> на принтере samsung 2070series</li>
-                            <li>умею устанавливать windows/linux</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-            <hr />
-        </div>
+        <section>
+            <h2 class="w_color">поздравляю - вы добрались до формы!</h2>
+            <form>
+                <fieldset>
+                    <legend>Это форма для задания</legend>
 
-        <div id="facts">
-            <h2><del>не</del> интересные факты:</h2>
-
-            <table>
-                <tr>
-                    <td>
-                        <img alt="тут должна быть катринка" src="resources/facts.jpg" width="300"/>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li>любитель фруктовых чаев</li>
-                            <li>поклонник апельсинов</li>
-                            <li>залипаю на светящиеся вещи</li>
-                            <li>сложно напугать, т.к. не успеваю реагировать</li>
-                            <li>сохраняю картинки</li>
-                            <li>меломан</li>
-                            <li>умею игнорировать сущщее</li>
-                            <li>иногда повторяюсь</li>
-                            <li>не люблю шум</li>
-                            <li>люблю наклейки, но некуда их клеить</li>
-                            <li>не придумал больше фактов</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-            <hr />
-        </div>
-
-        <div id="coming-soon">
-            <h2>coming soon...:</h2>
-
-            <table>
-                <tr>
-                    <td>
-                        <img alt="тут должна быть катринка" src="resources/future.jpg" width="300"/>
-                    </td>
-
-                    <td>
-                        <ul>
-                            <li>сдать это сайт</li>
-                            <li>сделать другой сайт</li>
-                            <li>коммерческая разработка</li>
-                            <li>доучиться</li>
-                            <li>сделать какую нибудь игру</li>
-                            <li>научиться прошивать android</li>
-                            <li>пересмотреть время приключений</li>
-                            <li>придумать планы на будущее</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-            <hr />
-        </div>
-
+                    <label>
+                        Допустим, поле ввода важного текста<br>
+                        <input id="textb" type="text" onkeyup="textChange('textb')">
+                    </label> <br>
+                    <button type="button" onclick="aaa()">кнопка</button>
+                </fieldset>
+            </form>
+        </section>
     </body>
 </html>

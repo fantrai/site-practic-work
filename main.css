@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* [class*='flex']{
+    display: flex;
+}
+
+.flex-h {
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.nipe {
+    background-color: darkgreen;
+    width: 50%;
+    transition: width 0.4s;
+}
+
+.fantrai {
+    background-color: orangered;
+    width: 50%;
+    transition: width 0.4s;
+}
+
+.flex-v {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: black;
+}
+
+a:visited {
+    color: currentColor;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+img{
+    width: 70%;
+}
+
+@media (any-hover:hover) {
+    .fantrai:hover, .nipe:hover {
+        width: 100%;
+        transition: width 0.4s;
+    }
+}

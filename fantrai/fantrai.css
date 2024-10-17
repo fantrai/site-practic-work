@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: orangered;
+}
+
+.main_block {
+    background-image: url(resources/fantrai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-position-y: 20%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    margin-top: 3em;
+}
+
+h1 {
+    font-size: 10em;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+}
+
+h6 {
+    font-size: 2em;
+}
+
+.false_butt {
+    font-size: 2em;
+    background-color: orangered;
+    color: white;
+    padding: 0.3em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 25px;
+    margin-top: 1em;
+}
+
+a:link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:visited {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.circle_av {
+    border-radius: 100%;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    width: 25em;
+    height: 100%;
+}
+
+#content {
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (any-hover:hover) {
+    .contents_list * li:hover {
+        transition: font-size 0.4s;
+        font-size: 120%;
+    }
+
+    .contents_list * li:not(:hover) {
+        transition: font-size 0.4s;
+    }
+}
+
+.contents_list {
+    color: white;
+    margin-left: 3em;
+    font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.about_me,
+.facts,
+.coming_soon {
+    background-color: white;
+}
+
+.about_me_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    padding: 3em;
+    padding-top: 0;
+    row-gap: 2em;
+}
+
+.about_me_grid * h3 {
+    font-size: 2em;
+    color: orangered;
+}
+
+.about_me_grid > div {
+    font-size: 2em;
+    text-align: center;
+}
+
+.w_color {
+    color: white;
+}
+
+.hobby_block,
+.coming_soon_list {
+    padding: 3em;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hobby_block > img,
+.coming_soon_list > img {
+    width: 30%;
+}
+
+.hobby_block > ul,
+.coming_soon_list > ul {
+    padding: 3em;
+    align-self: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+.facts_list {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    padding-top: 0;
+}
+
+.facts_list > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.facts_list > div > ul {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.facts_list > div > img {
+    width: 30%;
+    padding-left: 3em;
+}
+
+.useful_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3em;
+    padding-top: 0;
+    gap: 1em 2em;
+}
+
+.useful_grid > div {
+    background-color: white;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.coming_soon_list > ul {
+    color: black;
+}
+
+.up_butt {
+    position: fixed;
+    font-size: 2em;
+    background-color: rgb(247, 98, 44);
+    color: white;
+    padding: 0.3em;
+    padding-right: 1em;
+    padding-left: 1em;
+
+    border: solid;
+    border-color: black;
+    border-radius: 50px;
+    border-width: 1px;
+    
+    right: 1em;
+    bottom: 1em;
+}
+
+form {
+    margin: 3em;
+    margin-top: 0;
+    color: white;
+    font-size: 1.5em;
+}
+
+form * {
+    margin: 1em;
+    padding: 0.2em;
+}
